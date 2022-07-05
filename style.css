@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat",sans-serif;
+    line-height: 1.7rem;
+}
+
+/* for each page */
+.container{
+    width: 76%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+button{
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    background-color: #fb2056;
+    border: none;
+    padding: 12px 20px;
+    transition: all 400ms ease-in;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+/* nav bar */
+nav{
+    color: white;
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* overflow: hidden; */
+    /* border: 1px solid green; */
+    text-transform: uppercase;
+}
+
+.nav__container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+.nav__container h3{
+    font-size: 1.5rem; 
+    padding-top: 2rem;
+}
+.nav__container p{
+    letter-spacing: 3px;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid blue; */
+}
+
+.nav_menu a {
+    font-size: 0.75rem;
+    color: white;
+    transition: all 4ms ease;
+}
+
+.nav_menu a:hover {
+    border: 1px solid white;
+    padding: 11.5px;
+    border-radius: 20px;
+}
+/* header */
+header{
+    position: relative; 
+    top: 0;
+    overflow: hidden;
+    height: 66.5vh;
+    color: rgb(240, 231, 231);
+    /* border: 1px solid red; */
+    background-image: url(./images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    filter: brightness(85%);
+}
+.header__container{
+    padding-top: 8rem;
+}
+.header__container h2{
+    -webkit-text-stroke: 2px black;
+    filter: brightness(1=200%);
+}
+.header__container p{
+    font-family: cursive;
+    font-style:oblique;
+    -webkit-text-stroke: 2px black;
+}
+
+.header__container h2{
+    font-size: 2.8rem;
+}
+
+.header__container p,h2{
+    padding-bottom: 2rem;
+}
+
+/* quotation */
+.first{
+    background-color: #f4f5f9;
+}
+
+.quote__container{
+    display: grid;
+    color: #8e979e;
+    grid-template-columns: 10% 90%;
+    gap: 0rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.quote .pp{
+    font-weight: bolder;
+}
+.quote .pp span{
+    font-family: Courier, monospace; 
+    font-style: italic;
+}
+.quotation img{
+    width: 100%;
+    height: 100%;
+}
+
+.quote{
+    padding-left: 0px;
+}
+
+.quote p:last-child{
+    margin-right: 5%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+/* events */
+.events__container{
+    padding: 4.5rem;
+}
+.events__container img{
+    border-radius: 5px;
+    margin-bottom: 1.25rem;
+}
+.events__container a:hover{
+    color: blue;
+    transition: all 400ms ease-out;
+}
+
+
+.top{
+    text-align: center;
+    align-items: center;
+}
+
+.top h2{
+    padding-bottom: 10px;
+}
+
+.top img{
+    margin-top: 0;
+    padding: 0 0 2rem;
+
+}
+
+
+
+.bottom{
+    display: grid;
+    grid-template-columns: 46.5% 46.5%;
+    gap: 4.2rem;
+    text-align: center;
+}
+
+.bottom h2{
+    padding: 1rem 0 0.7rem;
+}
+
+.bottom p{
+    padding-bottom:1.5rem;
+}
+.bottom a{
+    color: red;
+}
+.img{
+    width: 100%;
+}
+
+.img img{
+    width: 100%;
+    box-shadow: 8px 8px 8px rgb(192, 190, 190);
+}
+
+/* banner */
+.full_banner{
+    color: white;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    background-image: url(./images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.banner{
+    padding: 6rem;
+}
+.banner h2{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.banner p{
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.banner a{
+    color: white; 
+    letter-spacing: 3px; 
+    font-size: 0.7rem;
+}
+.banner a:hover{
+    color: red;
+    transition: all 400ms ease-in-out;
+}
+
+/* upcoming tours */
+.UT{
+    display: grid;
+    grid-template-columns: 28% 65%;
+    padding: 5rem;
+    gap: 4.5rem;
+}
+.UT h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.UT img{
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.left- button{
+    margin-top: 1.5rem;
+}
+.left- button:hover{
+    border: 1px solid black;
+}
+.right- img{
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+}
+/* foooter */
+footer{
+    background: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
